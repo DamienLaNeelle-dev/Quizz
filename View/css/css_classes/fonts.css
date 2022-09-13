@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Signika-Regular;
+  src: url(/Project-trip/View/fonts/Signika-Regular.ttf);
+}
+
+@font-face {
+  font-family: Signika-SB;
+  src: url(/Project-trip/View/fonts/Signika-SemiBold.ttf);
+}
+
+.signika-reg {
+  font-family: Signika-Regular;
+}
+
+.signika-sb {
+  font-family: Signika-SB;
+}

@@ -20,26 +20,32 @@
 
 <body class="bg-2">
 
-    <div class="d-flex column align-items-center color-1">
-        <h1 class="signika-sb mb-0 size-3">Quizz</h1>
-        <h3 class="signika-sb m-0 size-2">Culture générale</h3>
+    <div class="w-100">
+        <h2 class="signika-sb color-1 d-flex justify-center text-center size-2">Choix du niveau <br> de difficulté</h2>
     </div>
+    <section class="d-flex column justify-center align-items-center h-section">
+        <div class="d-flex column align-items-center border br bg-1 p-20 color-1">
 
-    <section class="w-section h-section">
-        <div class="d-flex justify-center align-items-center color-1 p-10 w-100 h-100">
-            <div class="d-flex column justify-center align-items-center border br p-20 bg-1">
-                <h4 class="signika-sb m-0">Testez vos connaissances</h4>
-                <h3>Inscription</h3>
-                <form class="d-flex column" action="">
-                    <label class="d-flex justify-center signika-reg mb-5" for="name">Entrez votre nom :</label>
-                    <input class="signika-reg mb-10" type="text" name="name" id="name">
-                </form>
-                <div class="d-flex justify-center">
-                    <a href="/Quizz/Controller/controller_level.php"><button class="btn mb-5">Commencer le quizz</button></a>
-                </div>
-            </div>
+            <a href="/Quizz/Controller/controller_quizz_lv1.php"><button class="btn mb-5 size-1">
+                    <h4 class="m-0">Niveau 1 - Débutant</h4>
+                </button></a>
+            <a href=""><button class="btn mb-5 size-1">
+                    <h4 class="m-0">Niveau 2 - Intermédiaire</h4>
+                </button></a>
+            <a href=""><button class="btn mb-5 size-1">
+                    <h4 class="m-0">Niveau 3 - Expert</h4>
+                </button></a>
+            <a href="/Quizz/Controller/controller_main.php">
+                <button class="btn mt-20">
+                    Retour au menu
+                </button>
+            </a>
         </div>
+
+
     </section>
+
+
 </body>
 
 </html>

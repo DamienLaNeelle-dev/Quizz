@@ -15,3 +15,17 @@
 .signika-sb {
   font-family: Signika-SB;
 }
+
+.text-center {
+  text-align: center;
+}
+
+.size-1 {
+  font-size: 1.5rem;
+}
+.size-2 {
+  font-size: 2rem;
+}
+.size-3 {
+  font-size: 2.5rem;
+}

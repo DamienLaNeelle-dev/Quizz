@@ -1,0 +1,13 @@
+.btn {
+  font-family: Signika-Regular;
+  background-color: #031927;
+  color: #c1daff;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.btn:hover {
+  opacity: 0.5;
+  transition: all 0.5s;
+  cursor: pointer;
+}

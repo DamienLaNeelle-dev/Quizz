@@ -7,7 +7,7 @@ class Database{
 private $connection;
 
 private function set_connection(){
-    $database_name = "mysql:host=localhost;dbname=quizz";
+    $database_name = "mysql:host=localhost;dbname=quizz;charset=utf8";
     $database_username = "root";
     $database_password = "root";
 
@@ -31,12 +31,12 @@ private function del_connection(){
 
 //------------------------------------------------------------------ questions function
 
-public function get_questions_lv1($select){
+public function get_questions_lv1_db($select){
 
     $this->connection = $this->set_connection();
 
     if($this->connection != null){
-        $stmt = $this->connection->prepare("select " . $select . " from questions_lv1");
+        $stmt = $this->connection->prepare("SELECT " . $select . " FROM `questions_lv1`");
         $stmt->execute();
         $result = $stmt->fetchAll();
         return $result;
@@ -47,12 +47,12 @@ public function get_questions_lv1($select){
 
 //------------------------------------------------------------------ answers function
 
-public function get_answers_lv1($select, $id_questions_lv1){
+public function get_answers_lv1_db($select, $id_questions_lv1){
 
     $this->connection = $this->set_connection();
 
     if ($this != null) {
-        $stmt = $this->connection->prepare("select " . $select . " from answers_lv1 where idquestions_lv1 = :id_question_lv1");
+        $stmt = $this->connection->prepare("SELECT " . $select . " FROM answers_lv1 where idquestions_lv1 = :id_question_lv1");
         $stmt->bindValue(":id_question_lv1", $id_questions_lv1);
         $stmt->execute();
         $result = $stmt->fetchAll();

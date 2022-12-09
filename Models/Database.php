@@ -36,7 +36,7 @@ public function get_questions_lv1_db($select){
     $this->connection = $this->set_connection();
 
     if($this->connection != null){
-        $stmt = $this->connection->prepare("SELECT " . $select . " FROM `questions_lv1`");
+        $stmt = $this->connection->prepare("SELECT " . $select . " FROM `idquestions_lv1`");
         $stmt->execute();
         $result = $stmt->fetchAll();
         return $result;

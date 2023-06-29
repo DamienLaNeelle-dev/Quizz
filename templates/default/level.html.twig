@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Quizz
+{% endblock %}
+
+{% block stylesheets %}
+	{{ encore_entry_link_tags('style_level') }}
+{% endblock %}
+
+{% block body %}
+	<div class="level_selector">
+		<div class="container">
+            <h1>Bienvenue {{ name }}<br>Choisissez un niveau :</h1>
+			<div class="levels">
+				<a href="http://127.0.0.1:8000/level/easy"><button>
+                    Facile
+                </button></a>
+				<a href="http://127.0.0.1:8000/level/medium"><button>
+                    Intermédiaire
+                </button></a>
+				<a href="http://127.0.0.1:8000/level/hard"><button>
+                    Difficile
+                </button></a>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block javascripts %}
+{% endblock %}

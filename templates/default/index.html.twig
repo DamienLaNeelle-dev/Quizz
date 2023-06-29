@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Quizz
+{% endblock %}
+
+{% block stylesheets %}
+	{{ encore_entry_link_tags('style_main') }}
+{% endblock %}
+
+{% block body %}
+	<div class="welcome">
+		<div class="container">
+			<h1>
+				Bienvenue sur
+				<br/>
+				Quizz !
+			</h1>
+			<div class="name">
+				{{ form_start(form) }}
+				{{ form_widget(form) }}
+				<button type="submit">Entrer</button>
+				{{ form_end(form) }}
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block javascripts %}{% endblock %}

@@ -16,7 +16,7 @@ const Questions_Lv3 = () => {
     const fetchData = async () => {
       try {
         const questionsResponse = await axios.get(
-          "http://127.0.0.1:8000/level3"
+          "https://damienlaneelle-dev.github.io/Quizz/level3"
         );
         const randomizedQuestions = shuffleArray(questionsResponse.data).slice(
           0,
@@ -38,7 +38,7 @@ const Questions_Lv3 = () => {
         try {
           const questionId = data1[currentQuestionIndex].id;
           const responsesResponse = await axios.get(
-            `http://127.0.0.1:8000/response_Lv3/${questionId}`
+            `https://damienlaneelle-dev.github.io/Quizz/response_Lv3/${questionId}`
           );
           setQuestionResponses(responsesResponse.data);
         } catch (error) {
